@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "387614136474",
+    "project_id": "fateproject2024-50b7d",
+    "storage_bucket": "fateproject2024-50b7d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:387614136474:android:77d9967619acb40f8f2723",
+        "android_client_info": {
+          "package_name": "com.example.fate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABOFlOS4uw9uSZvqdlhcx33RVJjJ7hdOs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
