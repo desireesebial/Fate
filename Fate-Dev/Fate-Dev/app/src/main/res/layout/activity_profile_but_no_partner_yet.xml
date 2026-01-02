@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEF2F4"
+    tools:context=".profileButNoPartnerYet">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backbutton"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35px"
+        android:contentDescription="Profile"
+        android:fontFamily="@font/kiwimaru"
+        android:textStyle="bold"
+        android:text="Profile"
+        android:textSize="60px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_marginTop="200px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/prrofile_circle" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="66dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginStart="103dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+        app:srcCompat="@drawable/camera" />
+
+
+    <TextView
+        android:id="@+id/nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:contentDescription="Profile"
+        android:fontFamily="@font/kiwimaru"
+        android:text="Username"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView9" />
+
+    <TextView
+        android:id="@+id/refCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0px"
+        android:layout_marginTop="8dp"
+        android:contentDescription="Profile"
+        android:fontFamily="@font/kiwimaru"
+        android:text=" "
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nickname" />
+
+    <TextView
+        android:id="@+id/refText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="150px"
+        android:contentDescription="Profile"
+        android:fontFamily="@font/kiwimaru"
+        android:text="Referral Code:"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nickname" />
+
+    <Button
+        android:id="@+id/notice"
+        android:layout_width="346dp"
+        android:layout_height="48dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Notice Button"
+        android:fontFamily="@font/kiwimaru"
+        android:text="Notice"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/refText"
+        app:srcCompat="@drawable/cancel"
+        tools:layout_editor_absoluteY="561dp" />
+
+    <ImageButton
+        android:id="@+id/goNotice"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@null"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="@id/notice"
+        app:layout_constraintTop_toTopOf="@id/notice"
+        app:layout_constraintBottom_toBottomOf="@id/notice"
+        app:srcCompat="@drawable/go" />
+
+    <Button
+        android:id="@+id/Contact"
+        android:layout_width="346dp"
+        android:layout_height="48dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Cancel Button"
+        android:fontFamily="@font/kiwimaru"
+        android:text="Contact Fate"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/notice"
+        app:srcCompat="@drawable/cancel" />
+
+    <ImageButton
+        android:id="@+id/goContact"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="goContact"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="@id/Contact"
+        app:layout_constraintTop_toTopOf="@id/Contact"
+        app:layout_constraintBottom_toBottomOf="@id/Contact"
+        app:srcCompat="@drawable/go" />
+
+    <Button
+        android:id="@+id/Settings"
+        android:layout_width="346dp"
+        android:layout_height="48dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Cancel Button"
+        android:fontFamily="@font/kiwimaru"
+        android:text="Settings"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Contact"
+        app:srcCompat="@drawable/cancel"
+        tools:layout_editor_absoluteY="705dp" />
+
+    <ImageButton
+        android:id="@+id/goSettings"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Surprises"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="@id/Settings"
+        app:layout_constraintTop_toTopOf="@id/Settings"
+        app:layout_constraintBottom_toBottomOf="@id/Settings"
+        app:srcCompat="@drawable/go" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

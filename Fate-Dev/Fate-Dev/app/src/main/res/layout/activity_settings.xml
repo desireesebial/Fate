@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEF2F4"
+    tools:context=".settings">
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:contentDescription="Profile"
+        android:fontFamily="@font/kiwimaru"
+        android:text="Settings"
+        android:textSize="60px"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="exit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/x"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/sysSet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:padding="20dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Info Button"
+        android:fontFamily="@font/kiwimaru"
+        android:text="System Settings                                                    "
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="40px"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView1"
+        app:srcCompat="@drawable/cancel" />
+
+    <Button
+        android:id="@+id/pass"
+        android:layout_width="346dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/kiwimaru"
+        android:text="Change Password"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sysSet"
+        app:srcCompat="@drawable/cancel" />
+
+    <ImageButton
+        android:id="@+id/goPass"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@null"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="@id/pass"
+        app:layout_constraintTop_toTopOf="@id/pass"
+        app:layout_constraintBottom_toBottomOf="@id/pass"
+        app:srcCompat="@drawable/go" />
+
+    <Button
+        android:id="@+id/Notif"
+        android:layout_width="346dp"
+        android:layout_height="48dp"
+
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/kiwimaru"
+        android:text="Notifications"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pass"
+        app:srcCompat="@drawable/cancel" />
+
+    <ImageButton
+        android:id="@+id/goNotif"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@null"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="@id/Notif"
+        app:layout_constraintTop_toTopOf="@id/Notif"
+        app:layout_constraintBottom_toBottomOf="@id/Notif"
+        app:srcCompat="@drawable/go" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

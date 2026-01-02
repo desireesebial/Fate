@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEF2F4"
+    tools:context=".Profile"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-17dp">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backbutton"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35px"
+        android:contentDescription="Profile"
+        android:fontFamily="@font/kiwimaru"
+        android:text="Profile"
+        android:textSize="60px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_marginTop="200px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/prrofile_circle" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="66dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginStart="103dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+        app:srcCompat="@drawable/camera" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:contentDescription="Profile"
+        android:fontFamily="@font/kiwimaru"
+        android:text="Username"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView9" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70px"
+        android:layout_marginTop="20dp"
+        android:contentDescription="Profile"
+        android:fontFamily="@font/kiwimaru"
+        android:text=" "
+        android:textSize="20px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="150px"
+        android:contentDescription="Profile"
+        android:fontFamily="@font/kiwimaru"
+        android:text="Referral Code:"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView2" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView9"
+        app:srcCompat="@drawable/profilebox"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textVie5"
+        android:layout_width="70dp"
+        android:layout_height="22dp"
+        android:contentDescription="Profile"
+        android:fontFamily="@font/kiwimaru"
+        android:text="Surprises"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@id/surprises"
+        app:layout_constraintBottom_toBottomOf="@id/surprises"
+        app:layout_constraintEnd_toEndOf="@id/surprises"/>
+
+    <TextView
+        android:id="@+id/textVie7"
+        android:layout_width="80dp"
+        android:layout_height="22dp"
+        android:contentDescription="Profile"
+        android:fontFamily="@font/kiwimaru"
+        android:text="Notes"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@id/notes"
+        app:layout_constraintBottom_toBottomOf="@id/notes"
+        app:layout_constraintEnd_toEndOf="@id/notes"/>
+
+    <TextView
+        android:id="@+id/textVie8"
+        android:layout_width="80dp"
+        android:layout_height="22dp"
+        android:contentDescription="Profile"
+        android:fontFamily="@font/kiwimaru"
+        android:text="Memories"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@id/memories"
+        app:layout_constraintBottom_toBottomOf="@id/memories"
+        app:layout_constraintEnd_toEndOf="@id/memories" />
+
+    <ImageButton
+        android:id="@+id/surprises"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="210dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Surprises"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="@id/imageView17"
+        app:layout_constraintStart_toStartOf="@id/imageView17"
+        app:layout_constraintTop_toTopOf="@id/imageView17"
+        app:srcCompat="@drawable/surprises" />
+
+    <ImageButton
+        android:id="@+id/notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Notes"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="@id/imageView17"
+        app:layout_constraintStart_toStartOf="@id/imageView17"
+        app:layout_constraintTop_toTopOf="@id/imageView17"
+        app:srcCompat="@drawable/notes" />
+
+    <ImageButton
+        android:id="@+id/memories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Surprises"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="@id/imageView17"
+        app:layout_constraintStart_toStartOf="@id/imageView17"
+        app:layout_constraintTop_toTopOf="@id/imageView17"
+        app:srcCompat="@drawable/memories" />
+
+    <Button
+        android:id="@+id/notice"
+        android:layout_width="346dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Notice Button"
+        android:fontFamily="@font/kiwimaru"
+        android:text="Notice"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView17"
+        app:srcCompat="@drawable/cancel" />
+
+    <ImageButton
+        android:id="@+id/goNotice"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@null"
+        android:contentDescription="Surprises"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="@id/notice"
+        app:layout_constraintTop_toTopOf="@id/notice"
+        app:layout_constraintBottom_toBottomOf="@id/notice"
+        app:srcCompat="@drawable/go" />
+
+    <Button
+        android:id="@+id/Contact"
+        android:layout_width="346dp"
+        android:layout_height="48dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Cancel Button"
+        android:fontFamily="@font/kiwimaru"
+        android:text="Contact Fate"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/notice"
+        app:srcCompat="@drawable/cancel" />
+
+    <ImageButton
+        android:id="@+id/goContact"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="goContact"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="@id/Contact"
+        app:layout_constraintTop_toTopOf="@id/Contact"
+        app:layout_constraintBottom_toBottomOf="@id/Contact"
+        app:srcCompat="@drawable/go" />
+
+    <Button
+        android:id="@+id/Info"
+        android:layout_width="346dp"
+        android:layout_height="48dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Cancel Button"
+        android:fontFamily="@font/kiwimaru"
+        android:text="My Fate Information"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Contact"
+        app:srcCompat="@drawable/cancel" />
+
+    <ImageButton
+        android:id="@+id/goInfo"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Surprises"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="@id/Info"
+        app:layout_constraintTop_toTopOf="@id/Info"
+        app:layout_constraintBottom_toBottomOf="@id/Info"
+        app:srcCompat="@drawable/go" />
+
+    <Button
+        android:id="@+id/Settings"
+        android:layout_width="346dp"
+        android:layout_height="48dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Cancel Button"
+        android:fontFamily="@font/kiwimaru"
+        android:text="Settings"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Info"
+        app:srcCompat="@drawable/cancel" />
+
+    <ImageButton
+        android:id="@+id/goSettings"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Surprises"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="@id/Settings"
+        app:layout_constraintTop_toTopOf="@id/Settings"
+        app:layout_constraintBottom_toBottomOf="@id/Settings"
+        app:srcCompat="@drawable/go" />
+
+    <Button
+        android:id="@+id/CoolOff"
+        android:layout_width="346dp"
+        android:layout_height="48dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Cancel Button"
+        android:fontFamily="@font/kiwimaru"
+        android:text="Cool Off"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Settings"
+        app:srcCompat="@drawable/cancel" />
+
+    <ImageButton
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:contentDescription="menu"
+        android:src="@drawable/menu2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="30dp" />
+
+    <ImageView
+        android:id="@+id/message"
+        android:layout_width="65dp"
+        android:layout_height="63dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="120dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/home"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:layout_marginEnd="190dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

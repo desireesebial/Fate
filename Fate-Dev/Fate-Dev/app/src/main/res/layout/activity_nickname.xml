@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEF2F4"
+    tools:context=".nickname">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        tools:ignore="ContentDescription"
+        app:srcCompat="@drawable/mini_heart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/startingtext"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/kiwimaru"
+        android:inputType="text"
+        android:padding="15dp"
+        android:text="Please insert your unique"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="50px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/startingtext2"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:fontFamily="@font/kiwimaru"
+        android:inputType="text"
+        android:padding="15dp"
+        android:text="nickname!"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="50px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/startingtext" />
+
+    <TextView
+        android:id="@+id/startingtext3"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/kiwimaru"
+        android:inputType="text"
+        android:padding="15dp"
+        android:text="Couple call sign is also ok!"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="40px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/startingtext2" />
+
+    <EditText
+        android:id="@+id/etNickname"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:hint="Nickname"
+        android:inputType="text"
+        android:padding="15dp"
+        android:textSize="40px"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textStyle="normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/startingtext3" />
+
+    <ImageButton
+        android:id="@+id/ibNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/next"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
