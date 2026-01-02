@@ -1,0 +1,11 @@
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android">
+    <changeBounds/>
+    <changeTransform/>
+    <changeClipBounds/>
+    <changeImageTransform/>
+    <transition class="android.transition.Fade"/>
+    <transition class="android.transition.ChangeBounds"/>
+    <transition class="android.transition.ChangeTransform"/>
+    <transition class="android.transition.ChangeImageTransform"/>
+    <transition class="com.example.fate.PageTurnTransition"/> <!-- Replace "com.yourpackage" with your package name -->
+</transitionSet>

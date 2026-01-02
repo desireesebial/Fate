@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">YourAppName</string>
+    <string name="register_background">background</string>
+    <string name="email_description">email field</string>
+    <string name="username_description">username field</string>
+    <string name="password_description">password field</string>
+    <string name="button_description">button</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
